@@ -1,7 +1,4 @@
-pipeline {
-    agent any
-
-    stages {
+node {
         stage('Clone java project') {
                        steps{ 
                            git 'https://github.com/AsmitaK-Code/java.git'
@@ -14,4 +11,4 @@ pipeline {
              }
       }
     }
-}
+
